@@ -1,0 +1,471 @@
+
+
+body{padding: 0% auto; margin: 0% auto; }
+
+
+
+
+/* The FIrst Lineh */
+.first{
+background-color: #2756f2; 
+display: inline-block; justify-content: space-around; 
+width: 100%; text-align: center;
+border-radius: 2px; 
+color: snow; padding: 15px; font-family: 'Rubik'; 
+ font-size: 13px; float: center;}
+
+
+
+ .ic {
+   display: inline-block; justify-content: flex-start; text-align: center;
+   padding: 1; margin: 0px 10px 0px 20px;
+ }
+ 
+  
+ #text{margin:0px 0px 5px 0px;
+  text-align: center;
+  display: inline-block;
+justify-content: space-between;}
+
+  
+
+
+.one {
+  display: inline-block; justify-content: flex-end; 
+margin: 5px 0px 0px 70px; }
+
+
+.button{padding: 3px; display: inline-block;
+font-size: 80%; font-weight: 80; color: green; margin: 0px 2px 0px 3px;
+}
+
+
+.fb,.Wh,.In,.tw,.YT{
+  padding: 6px; color: honeydew; text-shadow: darkblue;
+  margin: 0px 8px 0px 0px; float: left auto;
+} */
+
+
+
+
+/* #millions{color: snow;
+text-align: center;
+padding: 6px; font-size: 10px;} */
+
+/* ul {list-style-type: square;} */
+
+
+/* Slider Text LIne  */
+
+
+
+
+
+/* Two Line */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  background:white;
+  font-size: 50px; 
+  
+  
+  
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+ 
+  
+}
+nav .logo{
+  float: left;
+  /* line-height: 40px; */
+  padding-left: 150px;
+  padding-top: 2px;
+}
+nav ul{
+  float: right;
+  list-style: none;
+  margin-right: 60px;
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background:white;
+  margin: 0 5px ;
+  
+  
+
+}
+
+nav ul li a{
+  color:black;  
+  text-decoration: none; 
+  line-height: 30px;
+  font-size: 15px;
+  padding: 12px 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  
+}
+nav ul li a:hover{
+  
+  color: ghostwhite;
+  background: #2756f2;
+  border-radius: 45px;
+  text-decoration: none;
+
+  
+  
+}
+nav ul ul li a:hover{
+  color: white;
+  background:  #2756f2;
+  /* box-shadow: none; */
+  border-radius: 2px;
+  font-size: 12.5px;
+  width: 170px;
+  
+}
+
+
+nav ul ul{
+  position: absolute;
+  top: 75px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+  line-height: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  
+  
+}
+nav ul ul ul{
+  border-top: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  
+}
+nav ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 170px ;
+  float: none;
+  display: list-item;
+
+
+}
+
+
+nav ul ul li a{
+  font-size: 12.5px; font-weight: 50%;
+  line-height: 0px;
+  height: 30px;
+  text-align: justify;
+  
+
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 130px; 
+  
+}
+
+.show,.icon, input{
+  display: none;
+}
+
+
+
+/* Media Queries */
+@media all and (max-width: 968px){
+ 
+  nav ul{
+      margin-right: 0px;
+      float: left;
+     
+  }
+  nav .logo{
+      padding-left: 30px;
+      width: 100%;
+  }
+  nav ul li, nav ul ul li{
+      display: block;
+      width: 100%;
+  }
+  nav ul ul{
+      top: 70px;
+      position: static;
+      float: none;
+      border-top: none;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+  }
+  nav ul ul li{
+      border-bottom: 0px;
+  }
+  nav ul ul ul li{
+      position: static;
+  }
+
+  nav ul ul a{
+      padding-left: 40px;
+     
+  }
+  nav ul ul ul a{
+      padding-left: 80px;
+  }
+  .show{
+      display: block;
+      color:black;
+      font-size: 14px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+  }
+  nav ul li a:hover{
+      background:  #2756f2;
+      color: floralwhite;
+
+  }
+  .show:hover{
+      color:black;
+      background: dodgerblue;
+      line-height: 50px;
+  }
+  .icon{
+      display: block;
+      color:  #2756f2;
+      position: absolute;
+      right: 40px;
+      line-height: 70px;
+      font-size: 25px;
+      cursor: pointer;
+  }
+  .show + a, ul{
+      display: none;
+  }
+  [id^=btn]:checked + ul {
+      display: block;
+  }
+  
+
+}
+
+
+
+
+
+
+
+.slidetxt{
+  background-color: #2756f2;
+  overflow: hidden;
+  max-width: 1000px; max-height: 27px;
+     
+  color: antiquewhite; font-family: 'Rubik'; font-size: 11.5px;
+ padding: 6px; margin: 10px auto 50px auto; 
+}
+@media only screen and (min-width:400px;)(max-width: 600px){
+  .slidetxt{}
+}
+
+/* Introduction */
+.intro{text-align: center; font-family: 'Times New Roman'; color: blue;}
+.duction{display: inline-block; color: forestgreen;}
+
+.line5{
+  text-align: center;}
+
+.line6{text-align: justify; display: flex; justify-content: initial;
+margin: 0px auto 50px auto; line-height: 26px;
+ align-items: center; font-weight: lighter;
+ max-width: 800px; margin-top: 20px; min-width: 200px;
+font-size: 95%; font-family: 'Rubik'; font-weight: 20%;}
+
+
+
+/* Seventh Line.. */
+.seven{
+  justify-content: space-around;
+  padding: 75px; text-align: center;
+background-color:  #2756f2; color: ghostwhite;
+margin-bottom: 6%; }
+.value{
+   display: inline-block; justify-content: space-around;
+margin: 13px 25px 13px 25px;
+}
+
+.seven2{color: greenyellow;}
+
+
+/* Liine 9 */
+.nine{text-align: center; justify-content: space-around;
+    /* margin-top: 25px; */
+     padding: 50px;
+}
+.nine2{width: 350px; height: 170px; 
+  display: inline-block; margin: 0px 20px 35px 15px;
+  padding: 20px 10px 0px 10px; background-color:ghostwhite;
+  vertical-align: center; box-shadow:  5px 5px 5px 5px gainsboro;
+ color:#2756f2; font-size: 130%; font-family: 'Times New Roman', 'Times', 'serif';
+ justify-content: space-around; font-weight: bold;}
+
+ /* Line Ten */
+.ten{max-width: 720px; display: inline-block;
+margin-left:100px; 
+color:#2756f2 ;}
+.ten2{
+  margin: 20px 30px 25px 0px;
+  padding: 20px 10px 0px 10px;
+  width: 320px; height: 70px; background-color:whitesmoke;
+  box-shadow:  3px 1px 5px 1px snow;
+display: inline-block; justify-content: space-around;
+text-align: justify; 
+
+}
+
+.ten3{
+  /* float: right;  */
+  display: inline-block;
+  position: relative;
+  /* bottom: 50px; */
+  max-height: 250px; overflow: hidden;
+  width: 300px; font-size: 70%;
+  margin:25px 75px 25px 0px ;
+padding: 20px;}
+
+.ten4{margin-right: 20px;}
+
+
+
+
+
+
+
+
+/* Line 11 */
+
+.int{text-align: center; font-family: 'Times New Roman'; color: blue;}
+.duct{display: inline-block; color: forestgreen;}
+.gallery-text{ display:inline ;}
+
+
+.image-gallery{margin-top: 50px; margin-bottom: 10%;}
+
+.container {
+  position: relative; 
+  width: 10%;
+  white-space: pre-line;
+  flex-wrap: wrap;}
+
+.image {
+  display: inline-block;
+  width: 220px ;
+  height: auto;}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white; opacity: 60%;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;}
+
+.line11e{display: inline-block;
+margin-left: -30px;
+text-align: center;}
+
+.top11{
+  display: inline-block; justify-content: initial;
+   image-rendering: optimizeQuality;
+    white-space: nowrap; 
+     width: 200px;
+      margin-left: 10%; }
+
+
+      @media only screen and (max-width: 600px) {
+        .line11e{
+          display: inline; text-align: center;
+
+        }
+      }
+
+
+
+.btn-top{
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  opacity: 50%;
+}
+
+/* Footer       */
+
+.footer{
+  background-color: #28292b;
+  color:white;
+  height: 400px;
+  position: relative;
+}
+
+
+.footer .footer-bottom{
+  background-color:#2756f2 ;
+  height: 50px;
+  width: 100%;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.footer-section{background-color: #28292b;
+display: inline-block;
+margin-top: 35px;
+margin-left: 30px;}
+
+.footer-content{
+  display: flex; justify-content: space-around; 
+  padding: 20px;
+  margin-top: 120px;}
+
+#un{list-style-image: image('phone.png');
+list-style: image('phone.png');}
+
+.f .t .I .T .Y{color: darkcyan; justify-content: space-around;}
+
+.Links .contact-form{font-weight: bold;}
+
